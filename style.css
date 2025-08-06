@@ -77,3 +77,15 @@ aside {
 .featured {
     font-weight: bold;
 }
+
+.badge-absolute {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background: #ffdf00;
+  color: #222;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+  z-index: 10;
+}
