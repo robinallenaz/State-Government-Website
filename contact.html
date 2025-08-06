@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form - Texas State Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function checkEmails(e) {
+      if (document.getElementById('email').value !== document.getElementById('confirm').value) {
+        alert('Email addresses do not match.');
+        e.preventDefault();
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Texas State Government Official Website</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="katy.html">Katy</a></li>
+      <li><a href="austin.html">Austin</a></li>
+      <li><a href="dallas.html">Dallas</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="container">
+      <h1>Contact Texas State Website</h1>
+      <form onsubmit="checkEmails(event)">
+        <label>First Name: <input name="first" required></label><br>
+        <label>Last Name: <input name="last" required></label><br>
+        <label>Email Address: <input type="email" id="email" required></label><br>
+        <label>Confirm Email Address: <input type="email" id="confirm" required></label><br>
+        <label>Your Question:<br>
+          <textarea name="question" required></textarea>
+        </label><br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
