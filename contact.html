@@ -5,8 +5,10 @@
   <title>Contact Form - Texas State Website</title>
   <link rel="stylesheet" href="style.css">
   <script>
+    // This function checks if the two email fields match when the form is submitted
     function checkEmails(e) {
       if (document.getElementById('email').value !== document.getElementById('confirm').value) {
+        // If they do not match, alert the user and prevent form submission
         alert('Email addresses do not match.');
         e.preventDefault();
       }
