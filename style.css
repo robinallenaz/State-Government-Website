@@ -89,6 +89,7 @@ aside {
     position: static;
     top: auto;
     right: auto;
+    margin-top: -80px; /* Moves aside */
 }
 
 .container {
