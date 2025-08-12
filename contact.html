@@ -29,18 +29,30 @@
     </ul>
   </nav>
   <main>
+    <section>
+      <h2>Office Hours</h2>
+      <p>Monday–Friday: 8am–5pm</p>
+    </section>
     <div class="container">
       <h1>Contact Texas State Website</h1>
-      <form onsubmit="checkEmails(event)">
-        <label>First Name: <input name="first" required></label><br>
-        <label>Last Name: <input name="last" required></label><br>
-        <label>Email Address: <input type="email" id="email" required></label><br>
-        <label>Confirm Email Address: <input type="email" id="confirm" required></label><br>
-        <label>Your Question:<br>
-          <textarea name="question" required></textarea>
-        </label><br>
-        <button type="submit">Submit</button>
-      </form>
+      <div class="form-aside-row">
+        <form onsubmit="checkEmails(event)">
+          <label>First Name: <input name="first" required></label><br>
+          <label>Last Name: <input name="last" required></label><br>
+          <label>Email Address: <input type="email" id="email" required></label><br>
+          <label>Confirm Email Address: <input type="email" id="confirm" required></label><br>
+          <label>Your Question:<br>
+            <textarea name="question" required></textarea>
+          </label><br>
+          <button type="submit">Submit</button>
+        </form>
+        <aside>
+          <div class="container">
+            <h3>Need Immediate Help?</h3>
+            <p>Call our hotline: 1-800-TEXAS</p>
+          </div>
+        </aside>
+      </div>
     </div>
   </main>
 </body>

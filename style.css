@@ -41,6 +41,8 @@ nav ul li a:hover {
 
 main {
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     margin: 30px auto;
     max-width: 900px;
     background: #fff;
@@ -52,8 +54,21 @@ section {
     flex: 3;
     padding-right: 30px;
 }
+
+/* Flex container to place form and aside side by side */
+.form-aside-row {
+    display: flex; /* horizontal layout */
+    width: 100%;
+    gap: 20px; /* Space between form and aside */
+}
+
+/* Let the form take most of the space */
+.form-aside-row form {
+    flex: 2;
+}
+
+/* General aside styling for all pages */
 aside {
-    flex: 1;
     background: #e6e6e6;
     padding: 15px;
     border-radius: 8px;
@@ -62,6 +77,24 @@ aside {
     position: relative;
     top: 0;
     right: 0;
+    width: 300px; /* fixed width for the aside */
+}
+
+/* Override for contact page flex layout */
+.form-aside-row aside {
+    flex: 1;
+    /* Remove float/position for flexbox layout */
+    margin-left: 0;
+    float: none;
+    position: static;
+    top: auto;
+    right: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 /* Example id and class selectors */
